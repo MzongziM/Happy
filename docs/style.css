@@ -68,7 +68,7 @@ h1 {
 	/*创建一个相对定位的包含六面体的空间*/
 	-webkit-transform-style: preserve-3d;
 	/*添加3D动画属性，如果没有的话，会显示不出3D特效*/
-	-webkit-animation: scroll 10s linear 7s infinite;
+	-webkit-animation: scroll 16s linear 7s infinite;
 	/*设置动画属性：动画名称，时间，速度，延迟时间，次数*/
 }
 
