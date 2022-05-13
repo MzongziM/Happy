@@ -1,23 +1,43 @@
-<!DCOTYPE html>
-<html>
+<!DOCTYPE html>
+<html lang="en" >
 <head>
-	<meta http-equiv="Content-Type" content="text/html ;charset=utf-8">
-	<link rel="stylesheet" type="text/css" href="style.css" />
-	<script src="mean.js" type="text/javascript" charset="utf-8"></script>
-	<title>Happy</title>
+  <meta charset="UTF-8">
+  <title>HTML5 3D照片墙动画DEMO演示</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-	<div id="snow"></div>
-	<div id="view">
-		<div id="contain">
-			<div id="face1" class="face"><img src="imgs/1.jpg"></div>
-			<div id="face2" class="face"><img src="imgs/2.jpg"></div>
-			<div id="face3" class="face"><img src="imgs/3.jpg"></div>
-			<div id="face4" class="face"><img src="imgs/4.jpg"></div>
-			<div id="face5" class="face"><img src="imgs/5.jpg"></div>
-			<div id="face6" class="face"><img src="imgs/6.jpg"></div>
-		</div>
-	</div>
-	<audio id="audio" src="Music/Hippop_XQS%20-%20生日快乐-钢琴版.mp3" autoplay="autoplay" loop="loop"></audio>
+<!-- partial:index.partial.html -->
+<div id="drag-container">
+  <div id="spin-container">
+    <!-- 在这里添加图片或者mp4视频 -->
+    <img src="imgs/1.jpg" alt="">
+    <img src="imgs/2.jpg" alt="">
+    <img src="imgs/3.jpg" alt="">
+    <img src="imgs/4.jpg" alt="">
+    <img src="imgs/5.jpg" alt="">
+    <img src="imgs/6.jpg" alt="">
+    <img src="imgs/7.jpg" alt="">
+    <!-- 带链接的图片 -->
+    <!-- <a target="_blank" href="7.png">
+		<img src="imgs/1.jpg">
+    </a> -->
+
+    <!-- 示例视频  -->
+    <video controls autoplay="autoplay" loop="loop" id="video">
+      <source src="demo.mp4" type="video/mp4">
+    </video>
+
+    <!-- 背景文字描述 -->
+    <p>3D 相册</p>
+  </div>
+  <div id="ground"></div>
+</div>
+
+<div id="music-container"></div>
+<audio src="Music/Hippop_XQS%20-%20生日快乐-钢琴版.mp3" autoplay="autoplay" loop="loop">
+	当前浏览器不支持audio
+</audio>
+<script  src="mean.js"></script>
+
 </body>
 </html>
